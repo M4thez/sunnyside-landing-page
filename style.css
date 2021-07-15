@@ -1,21 +1,130 @@
+.red-underline b::after, .yellow-underline b::after {
+  content: "";
+  height: 8px;
+  border-radius: 6px;
+  display: block;
+}
+
 html {
   font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: #ebebeb;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
 nav {
   font: 600 16px "Barlow", sans-serif;
-  display: flex;
   list-style-type: none;
-  justify-content: flex-end;
 }
 nav a {
-  text-decoration: none;
-  margin-right: 2rem;
   color: white;
+  margin-right: 1rem;
+  padding: 0.8rem 1.2rem;
+}
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 2em;
+}
+
+.header-img {
+  background-image: url("images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 900px;
+}
+
+h1 {
+  text-align: center;
+  font: 700 52px "Fraunces", serif;
+  color: white;
+  text-transform: uppercase;
+  padding: 50px 0px;
+}
+
+.icon-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 250px;
+}
+.icon-arrow img {
+  animation: MoveUpDown 2s ease-in-out infinite;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+.box {
+  display: flex;
+}
+.box div {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  justify-content: center;
+  padding: 140px;
+}
+.box div > * {
+  margin-bottom: 30px;
+}
+.box h2 {
+  font: 700 48px "Fraunces", serif;
+}
+.box p {
+  font: 600 16px "Barlow", sans-serif;
+  color: #818498;
+}
+.box a {
+  color: #19536b;
+  font: 700 16px "Fraunces", serif;
+  text-transform: uppercase;
+}
+.box img {
+  flex: 0 0 50%;
+  object-fit: cover;
+}
+
+.yellow-underline b {
+  display: inline-block;
+}
+
+.yellow-underline b::after {
+  background: #fad400;
+}
+
+.red-underline b {
+  display: inline-block;
+}
+
+.red-underline b::after {
+  background: #fe7867;
 }
 
 /*# sourceMappingURL=style.css.map */
