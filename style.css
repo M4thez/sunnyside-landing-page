@@ -1,3 +1,21 @@
+html {
+  font-size: 18px;
+}
 
+body {
+  background-color: #ebebeb;
+}
+
+nav {
+  font: 600 16px "Barlow", sans-serif;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  margin-right: 2rem;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

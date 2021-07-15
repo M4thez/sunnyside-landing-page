@@ -1,0 +1,29 @@
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$dark-desat-cyan: hsl(167, 40%, 24%);
+$dark-moderate-cyan: hsl(168, 34%, 41%);
+$dark-blue: hsl(198, 62%, 26%);
+$white: hsl(0, 0%, 100%);
+
+$font-barlow: 'Barlow', sans-serif;
+$font-fraunces: 'Fraunces', serif;
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+nav {
+    font: 600 16px $font-barlow;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    a {
+        text-decoration: none;
+        margin-right: 2rem;
+        color: $white;
+    }
+}
