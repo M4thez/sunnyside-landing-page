@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 18px;
+  font: 600 18px "Barlow", sans-serif;
 }
 
 * {
@@ -98,6 +98,7 @@ h1 {
 }
 .box h2 {
   font: 700 44px "Fraunces", serif;
+  color: #19536b;
 }
 .box p {
   font: 600 18px "Barlow", sans-serif;
@@ -212,7 +213,8 @@ footer {
   flex-direction: column;
   background-color: #90d4c5;
   align-items: center;
-  padding: 60px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 footer .footer__logo {
   width: 150px;
@@ -223,7 +225,7 @@ footer div {
 }
 footer .footer__links {
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   gap: 60px;
 }
 footer .footer__links a {
@@ -235,6 +237,16 @@ footer .footer__links a:hover {
 }
 footer div a img:hover {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(3401%) hue-rotate(178deg) brightness(104%) contrast(109%);
+}
+footer .footer__attribution {
+  margin-top: 80px;
+  color: #458c7e;
+}
+footer .footer__attribution a {
+  color: #25564b;
+}
+footer .footer__attribution a:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
