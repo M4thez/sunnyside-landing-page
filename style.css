@@ -3,6 +3,7 @@
   height: 8px;
   border-radius: 6px;
   display: block;
+  opacity: 35%;
 }
 
 html {
@@ -51,7 +52,7 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 800px;
+  min-height: 980px;
 }
 
 h1 {
@@ -122,12 +123,20 @@ h1 {
   background: #fad400;
 }
 
+.yellow-underline b:hover::after {
+  opacity: 100%;
+}
+
 .red-underline b {
   display: inline-block;
 }
 
 .red-underline b::after {
   background: #fe7867;
+}
+
+.red-underline b:hover::after {
+  opacity: 100%;
 }
 
 .box-two {
