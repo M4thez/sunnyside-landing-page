@@ -211,16 +211,16 @@ h1 {
   padding-top: 10px;
 }
 
-.gallery {
+.gallery-desktop {
   display: flex;
 }
-.gallery div {
+.gallery-desktop img {
   flex: 25%;
   max-width: 25%;
 }
-.gallery img {
-  display: block;
-  width: 100%;
+
+.gallery-mobile {
+  display: none;
 }
 
 footer {
@@ -315,15 +315,35 @@ footer .footer__attribution a:hover {
     font-size: 28px;
   }
   .box-two article div p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
+  .box-three h4 {
+    padding: 80px 15px 0;
+    letter-spacing: 2px;
+  }
   .box-three div {
     flex-direction: column;
     padding: 20px;
   }
   .box-three div article {
-    margin: 0;
+    margin: 30px 5px;
+  }
+  .box-three div article > * {
+    margin-bottom: 20px;
+  }
+
+  .gallery-desktop {
+    display: none;
+  }
+
+  .gallery-mobile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-mobile img {
+    flex: 50%;
+    max-width: 50%;
   }
 }
 

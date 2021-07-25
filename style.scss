@@ -259,19 +259,21 @@ h1 {
     }
 }
 
-.gallery {
+// GALLERY
+.gallery-desktop {
     display: flex;
 
-    div {
+    img {
         flex: 25%;
         max-width: 25%;
     }
-
-    img {
-        display: block;
-        width: 100%;
-    }
 }
+
+.gallery-mobile {
+    display: none;
+}
+
+// GALLERY END
 
 footer {
     display: flex;
@@ -383,20 +385,44 @@ footer {
                 }
 
                 p {
-                    font-size: 15px;
+                    font-size: 18px;
                 }
             }
         }
     }
 
     .box-three {
+        h4 {
+            padding: 80px 15px 0;
+            letter-spacing: 2px;
+        }
+
         div {
             flex-direction: column;
             padding: 20px;
 
             article {
-                margin: 0;
+                margin: 30px 5px;
+            }
+
+            article>* {
+                margin-bottom: 20px;
             }
         }
     }
+
+    .gallery-desktop {
+        display: none;
+    }
+
+    .gallery-mobile {
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
 }
