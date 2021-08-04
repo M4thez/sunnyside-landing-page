@@ -49,7 +49,6 @@ a {
 
 nav {
     font: 600 16px $font-barlow;
-    list-style-type: none;
 
     a {
         color: white;
@@ -338,12 +337,27 @@ footer {
     }
 }
 
+@media only screen and (max-width: 900px) and (min-width: 720px){
+    .box-two article div {
+        h3 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
 // Mobile screen
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 720px) {
     .header-img {
         background-image: url("images/mobile/image-header.jpg");
     }
-
+    h1 {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
     .box {
         flex-direction: column;
     }
