@@ -33,7 +33,6 @@ a {
 
 nav {
   font: 600 16px "Barlow", sans-serif;
-  list-style-type: none;
 }
 nav a {
   color: white;
@@ -275,9 +274,23 @@ footer .footer__attribution a:hover {
     bottom: 50px;
   }
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 900px) and (min-width: 720px) {
+  .box-two article div h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .box-two article div p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 720px) {
   .header-img {
     background-image: url("images/mobile/image-header.jpg");
+  }
+
+  h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
   }
 
   .box {
