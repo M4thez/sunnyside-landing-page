@@ -6,9 +6,3 @@ function menuClick() {
     nav.style.display = "flex";
   }
 }
-
-window.onclick = function(event) {
-  if (!(event.target.matches("#nav-links") || event.target.matches(".nav-hamburger"))) {
-    document.getElementById("nav-links").style.display = "none";
-  }
-}
